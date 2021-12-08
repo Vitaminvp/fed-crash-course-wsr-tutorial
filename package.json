@@ -33,6 +33,7 @@
     "@wix/wix-express-require-https": "latest",
     "@wix/wix-i18n-config": "^5.0.6",
     "@wix/wix-node-i18n-cache": "0.0.52",
+    "classnames": "^2.3.1",
     "express": "^4.17.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
@@ -53,7 +54,8 @@
     "husky": "~4.2.1",
     "lint-staged": "^10.0.7",
     "puppeteer": "^5.5.0",
-    "typescript": "~4.1.2"
+    "typescript": "~4.1.2",
+    "wix-style-react": "^10.5.0"
   },
   "jest": {
     "preset": "@wix/jest-yoshi-preset"
