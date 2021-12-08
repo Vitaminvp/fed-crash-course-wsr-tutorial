@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Card, Cell } from 'wix-style-react';
 
 export default () => (
-  <>
+  <Layout>
     <Cell span={6}>
       <Card stretchVertically>
         <Card.Header title="first card" subtitle="nice" />
@@ -48,5 +48,5 @@ export default () => (
         <Card.Content>some more content again</Card.Content>
       </Card>
     </Cell>
-  </>
+  </Layout>
 );
