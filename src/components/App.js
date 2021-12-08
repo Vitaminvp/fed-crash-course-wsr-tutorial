@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Tabs, WixStyleReactProvider } from 'wix-style-react';
 import LayoutItem from './FirstTask/LayoutItem';
 import FormItem from './FirstTask/FormItem';
@@ -8,7 +8,7 @@ import WsrForm from './SecondTask/WSRForm';
 import { tabs } from './utils';
 
 export default () => {
-  const [activeId, setActiveId] = React.useState(3);
+  const [activeId, setActiveId] = useState(3);
 
   const tabContent = {
     1: <LayoutItem />,
