@@ -1,9 +1,11 @@
 import React from 'react';
-import { Layout, Tabs } from 'wix-style-react';
-import LayoutItem from './LayoutItem';
-import FormItem from './FormItem';
+import { Tabs, WixStyleReactProvider } from 'wix-style-react';
+import LayoutItem from './FirstTask/LayoutItem';
+import FormItem from './FirstTask/FormItem';
 import Divider from './Divider';
-import Selection from './Selection';
+import Selection from './FirstTask/Selection';
+import WsrForm from './SecondTask/WSRForm';
+import { tabs } from './utils';
 
 export default () => {
   const [activeId, setActiveId] = React.useState(3);
@@ -12,20 +14,17 @@ export default () => {
     1: <LayoutItem />,
     2: <FormItem />,
     3: <Selection />,
+    4: <WsrForm />,
   };
   return (
-    <>
+    <WixStyleReactProvider>
       <Tabs
         activeId={activeId}
-        onClick={(value) => setActiveId(value.id)}
-        items={[
-          { id: 1, title: 'Layout' },
-          { id: 2, title: 'Form' },
-          { id: 3, title: 'Selection' },
-        ]}
+        onClick={({ id }) => setActiveId(id)}
+        items={tabs}
       />
       <Divider />
-      <Layout>{tabContent[activeId]}</Layout>
-    </>
+      {tabContent[activeId]}
+    </WixStyleReactProvider>
   );
 };

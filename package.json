@@ -37,7 +37,8 @@
     "express": "^4.17.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "source-map-support": "^0.5.11"
+    "source-map-support": "^0.5.11",
+    "wix-ui-icons-common": "^2.0.384"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.5",

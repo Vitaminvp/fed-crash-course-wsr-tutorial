@@ -38,8 +38,8 @@ export default () => {
                     onChange={(e) =>
                       handleChange({ inputValue: e.target.value })
                     }
-                    status={inputError && ERR}
-                    statusMessage={inputError && ERR_MSG}
+                    status={inputError ? ERR : null}
+                    statusMessage={inputError ? ERR_MSG : null}
                     tooltipPlacement="top-end"
                   />
                 </FormField>

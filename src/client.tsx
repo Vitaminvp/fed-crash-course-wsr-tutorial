@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { I18nextProvider, initI18n } from '@wix/wix-i18n-config';
 import { create as createFedopsLogger } from '@wix/fedops-logger';
-import App from './components';
+import App from './components/FirstTask';
 
 const fedopsLogger = createFedopsLogger('wsr-tutorial');
 
