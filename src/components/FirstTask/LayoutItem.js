@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Card, Cell } from 'wix-style-react';
+import DataHooks from '../SecondTask/DataHooks';
 
 export default () => (
   <Layout>
@@ -11,7 +12,7 @@ export default () => (
       </Card>
     </Cell>
     <Cell span={6}>
-      <Card>
+      <Card dataHook={DataHooks.FIRST_CARD}>
         <Card.Header title="What is Lorem Ipsum?" />
         <Card.Divider />
         <Card.Content>

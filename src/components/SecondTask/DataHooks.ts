@@ -6,4 +6,7 @@ export default {
   SAVED_DATA: 'saved-data',
   FIRST_NAME: 'first-name',
   LAST_NAME: 'last-name',
+  APP_TITLE: 'app-title',
+  TABS: 'tabs',
+  FIRST_CARD: 'first-card',
 };
