@@ -8,6 +8,7 @@ import {
   Dropdown,
 } from 'wix-style-react';
 import { ERR, ERR_MSG, MAX_CHAR_NUM } from './FormItem';
+import { options } from '../utils';
 
 export default () => {
   const [{ inputValue, dropdownSelectedId }, setValue] = React.useState({
@@ -54,20 +55,7 @@ export default () => {
                     onSelect={(option) =>
                       handleChange({ dropdownSelectedId: option.id })
                     }
-                    options={[
-                      {
-                        id: 0,
-                        value: 'first option',
-                      },
-                      {
-                        id: 1,
-                        value: 'second option',
-                      },
-                      {
-                        id: 1,
-                        value: 'third option',
-                      },
-                    ]}
+                    options={options}
                   />
                 </FormField>
               </Cell>

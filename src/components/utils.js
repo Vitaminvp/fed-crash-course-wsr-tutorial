@@ -31,3 +31,18 @@ export const tabs = [
   { id: 3, title: 'Selection' },
   { id: 4, title: 'Wsr Form' },
 ];
+
+export const options = [
+  {
+    id: 0,
+    value: 'first option',
+  },
+  {
+    id: 1,
+    value: 'second option',
+  },
+  {
+    id: 1,
+    value: 'third option',
+  },
+];
